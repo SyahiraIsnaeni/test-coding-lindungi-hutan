@@ -1,6 +1,6 @@
 <template>
   <a href="#">
-    <div class="grid mx-20 grid-cols-4 gap-5">
+    <div class="grid mx-20 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
     <article
       v-for="article in articles"
       :key="article.id"
@@ -8,7 +8,7 @@
     >
       <img :src="article.pict" class="rounded-t-lg border-b border-opacity-40 h-[200px] w-full object-cover" />
       <div class="px-3 mt-2">
-        <h2 class="text-lg font-semibold">{{ article.title }}</h2>
+        <h2 class="text-base md:text-lg font-semibold">{{ article.title }}</h2>
         <div class="flex mt-1.5">
           <p class="font-normal text-sm">By {{ article.author }}</p>
           <p class="font-normal text-sm ml-auto">{{ article.date }}</p>
